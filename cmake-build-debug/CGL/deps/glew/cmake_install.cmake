@@ -1,4 +1,4 @@
-# Install script for directory: /Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew
+# Install script for directory: /Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/libglew.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/libglew.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libglew.a")
@@ -46,6 +46,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include/GL")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include/GL")
 endif()
 

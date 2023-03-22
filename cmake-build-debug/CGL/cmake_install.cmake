@@ -1,8 +1,8 @@
-# Install script for directory: /Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/CGL
+# Install script for directory: /Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/CGL")
+  set(CMAKE_INSTALL_PREFIX "/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/cmake_install.cmake")
-  include("/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/cmake_install.cmake")
+  include("/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/cmake_install.cmake")
+  include("/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/cmake_install.cmake")
 
 endif()
 

@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Assignment3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CGL\;CMake Files\CGL\deps\;CMake Files\CGL\deps\glew\;CMake Files\CGL\deps\glfw\;CMake Files\CGL\deps\glfw\CMake\;CMake Files\CGL\deps\glfw\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pathtracer">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/pathtracer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/./src/imgui"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/./src/imgui/backends"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include/CGL"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 pathtracer"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pathtracer/fast">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/pathtracer" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/./src/imgui"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/./src/imgui/backends"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include/CGL"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 pathtracer/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CGL">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/libCGL.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include/CGL"/>
+					<Add directory="/usr/local/include/freetype2"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 CGL"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CGL/fast">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/libCGL.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/include/CGL"/>
+					<Add directory="/usr/local/include/freetype2"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 CGL/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glew">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/libglew.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 glew"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glew/fast">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/libglew.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 glew/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="uninstall">
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 uninstall"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 glfw"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glfw/fast">
+				<Option output="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/libglfw3.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_GLFW_USE_CONFIG_H"/>
+					<Add option="-DGLEW_STATIC"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src"/>
+					<Add directory="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 glfw/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/src/glew.c">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/src/glewinfo.c">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/src/visualinfo.c">
+			<Option target="glew"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include/GLFW/glfw3.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/include/GLFW/glfw3native.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_init.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_joystick.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_joystick.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_monitor.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_platform.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_time.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/cocoa_window.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/egl_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/egl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/init.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/input.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/internal.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/mappings.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/monitor.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/nsgl_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/nsgl_context.m">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/osmesa_context.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/osmesa_context.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/posix_thread.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/posix_thread.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/vulkan.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/window.c">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/base64.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/color.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/complex.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/lodepng.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/matrix3x3.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/matrix4x4.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/osdfont.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/osdtext.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/path.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/quaternion.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/tinyxml2.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/vector2D.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/vector3D.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/vector4D.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/src/viewer.cpp">
+			<Option target="CGL"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/src/glfw_config.h">
+			<Option target="glfw"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/application.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/application.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/main.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/meshEdit.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/meshEdit.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/renderer.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/visual_debugger.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/application/visual_debugger.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/backends/imgui_impl_glfw.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/backends/imgui_impl_glfw.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/backends/imgui_impl_opengl2.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/backends/imgui_impl_opengl2.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/imgui.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/imgui.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/imgui_draw.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/imgui_tables.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/imgui/imgui_widgets.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/advanced_bsdf.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/bsdf.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/camera.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/camera_lens.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/intersection.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/pathtracer.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/ray.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/raytraced_renderer.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/raytraced_renderer.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/sampler.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/pathtracer/sampler.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/aggregate.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/bbox.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/bvh.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/camera_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/camera_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/collada.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/collada.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/collada_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/light_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/light_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/material_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/material_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/polymesh_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/polymesh_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/sphere_info.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/collada/sphere_info.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/environment_light.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/environment_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/ambient_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/area_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/directional_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/draw_style.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/environment_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/material.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/mesh.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/mesh.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/mesh_view.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/point_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/scene.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/scene.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/sphere.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/sphere.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/gl_scene/spot_light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/light.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/object.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/object.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/primitive.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/scene.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/sphere.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/scene/triangle.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/halfEdgeMesh.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/halfEdgeMesh.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/image.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/lodepng.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/lodepng.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/mutablePriorityQueue.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/random_util.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/sphere_drawing.cpp">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/sphere_drawing.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/src/util/work_queue.h">
+			<Option target="pathtracer"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CGL\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/find_avx.cmake">
+			<Option virtualFolder="CMake Files\CGL\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CGL\deps\glew\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CGL\deps\glfw\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\CGL\deps\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/CMake/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\CGL\deps\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/CMake/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\CGL\deps\glfw\CMake\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CGL\deps\glfw\src\"/>
+		</Unit>
+		<Unit filename="/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/CGL/deps/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\CGL\deps\glfw\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

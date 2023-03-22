@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/Users/aaronshalf/Desktop/Semester6/CS184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/install_manifest.txt" files)
+file(READ "/Users/erickusnanto/Desktop/cs184/p3-2-pathtracer-sp23-aaron-eric/cmake-build-debug/CGL/deps/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

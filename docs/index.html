@@ -95,30 +95,96 @@
 
         <h3 align="middle">Part 2. Microfacet Material</h3>
         <p><b>
-            Show a screenshot sequence of 4 images of scene `CBdragon_microfacet_au.dae` rendered with $\alpha$ set to 0.005, 0.05, 0.25 and 0.5. The other settings should be at least 128 samples per pixel and 1 samples per light. The number of bounces should be at least 5. Describe the differences between different images. Note that, to change the $\alpha$, just open the .dae file and search for `microfacet`.
+            Show a screenshot sequence of 4 images of scene `CBdragon_microfacet_au.dae` rendered with &alpha; set to 0.005, 0.05, 0.25 and 0.5. The other settings should be at least 128 samples per pixel and 1 samples per light. The number of bounces should be at least 5. Describe the differences between different images. Note that, to change the &alpha;, just open the .dae file and search for `microfacet`.
         </b></p>
-        <p>
-            Your response goes here.
+        <div align="middle">
+            <table style="width:100%">
+                <tr align="center">
+                    <td>
+                        <img src="images/task2-dragon-a-0.005.png" align="middle" width="400px"/>
+                        <figcaption>CBDragon with &alpha; set to 0.005</figcaption>
+                    </td>
+                    <td>
+                        <img src="images/task2-dragon-a-0.05.png" align="middle" width="400px"/>
+                        <figcaption>CBDragon with &alpha; set to 0.05</figcaption>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <img src="images/task2-dragon-a-0.25.png" align="middle" width="400px"/>
+                        <figcaption>CBDragon with &alpha; set to 0.25</figcaption>
+                    </td>
+                    <td>
+                        <img src="images/task2-dragon-a-0.5.png" align="middle" width="400px"/>
+                        <figcaption>CBDragon with &alpha; set to 0.5</figcaption>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <br>
+        <p>As we decrease our &alpha; value, the dragon begins to reflect more and more light towards the camera, becoming
+            glossier and more specular. Because &alpha; represents the smoothness of the surface, fewer rays would scatter
+            off, bouncing off micro-bumps on the surface. The dragon with an &alpha; of 0.5 looks very much diffuse, as any
+            light rays that hit the dragon scatter off asymmetrically. However, the dragon with an &alpha; of 0.25 actually
+            begins to reflect red and blue at its sides, a result of indirect lighting bouncing off the colored walls and
+            reflecting specularly off the dragon's surface at the same angle to hit the camera. After that, the dragons
+            with &alpha; = 0.05 and &alpha; = 0.005 honestly don't look very different from one another, but both are so
+            specular and mirror-like that they begin to reflect the light, or more specifically the lack thereof, of the
+            plane perpendicular to the camera's viewpoint, resulting in black color coming from the dragon.
         </p>
         <br>
         <p><b>
             Show two images of scene `CBbunny_microfacet_cu.dae` rendered using cosine hemisphere sampling (default) and your importance sampling. The sampling rate should be fixed at 64 samples per pixel and 1 samples per light. The number of bounces should be at least 5. Briefly discuss their difference.
         </b></p>
-        <p>
-            Your response goes here.
+        <div align="middle">
+            <table style="width:100%">
+                <tr align="center">
+                    <td>
+                        <img src="images/task2-bunny-hemisphere.png" align="middle" width="400px"/>
+                        <figcaption>CBBunny with hemisphere sampling.</figcaption>
+                    </td>
+                    <td>
+                        <img src="images/task2-bunny-importance.png" align="middle" width="400px"/>
+                        <figcaption>CBBunny with importance sampling.</figcaption>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <p>Shown above, there is a massive visual difference with rendering CBbunny with the naive hemisphere sampling
+            compared to our new importance sampling method. The former has many black pixels throughout the
+            entirety of the bunny, similar to the differences in hemisphere and importance sampling in Project: 3-1.
+            The hemisphere sampling simply discards many of its samples, creating much more variance in each sample of a
+            pixel, while the latter image created by importance sampling shows a more complete image of the bunny reflecting
+            light off itself.
         </p>
         <br>
         <p><b>
             Show at least one image with some other conductor material, replacing `eta` and `k`. Note that you should look up values for real data rather than modifying them arbitrarily. Tell us what kind of material your parameters correspond to. 
         </b></p>
-        <p>
-            Your response goes here.
+        <div align="middle">
+            <table style="width:100%">
+                <tr align="center">
+                    <img src="images/task2-dragon-mercury.png" align="middle" width="400px"/>
+                    <figcaption>An image with a conductor material of mercury.
+                    This image was rendered with an &alpha; value of 0.05 and a sample rate of 256.</figcaption>
+                </tr>
+            </table>
+        </div>
+        <p>Here we rendered CBdragon with mercury material instead of gold. Using the reference site provided on the
+            spec and the fixed wavelengths for RBG leads us to an &eta; vector of {1.8795, 1.5472, 1.1353} and a &kappa; vector
+            of {5.1076, 4.6437, 3.9980}. This refraction index corresponds to mercury at room temperature, which is
+            liquid, so the render is not the most realistic, but the intended effect is clear. Visually speaking, the
+            figure honestly looks pretty similar to our render of a gold dragon with the same &alpha; value, even though the
+            gold refractive indices were vastly different (&eta;= {0.21646 0.42833 1.3284}, &kappa;={3.2390 2.4599 1.8661}).
         </p>
         <br>
         
         
         
 
+        <!---
         <h3 align="middle">Part 3. Environment Lightl</h3>
         <b>Pick one *.exr* file to use for all subparts here. Include a converted *.jpg* of it in your website so we know what map you are using.</b>
         
@@ -178,6 +244,7 @@
             Your response goes here.
         </p>
         <br>
+        -->
 
     </div>
 </body>

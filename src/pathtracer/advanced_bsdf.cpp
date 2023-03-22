@@ -46,7 +46,10 @@ namespace CGL {
         // TODO Project 3-2: Part 2
         // Compute Beckmann normal distribution function (NDF) here.
         // You will need the roughness alpha.
-        return 1.0;
+        float tan = sin_theta(h) / cos_theta(h);
+        float e_value = exp(-pow(tan, 2) / pow(alpha,2));
+        float ndf = e_value / (PI * pow(alpha,2) * pow(cos_theta(h), 4));
+        return ndf;
     }
 
     Vector3D MicrofacetBSDF::F(const Vector3D wi) {
@@ -54,14 +57,31 @@ namespace CGL {
         // Compute Fresnel term for reflection on dielectric-conductor interface.
         // You will need both eta and etaK, both of which are Vector3D.
 
-        return Vector3D();
+        float cos = abs(cos_theta(wi));
+        float cos2 = pow(cos, 2);
+
+        Vector3D Rs = ((eta*eta + k*k) - (2*eta*cos) + cos2 ) /
+                ((eta*eta + k*k) + (2*eta*cos) + cos2);
+
+        Vector3D Rp =  ((eta*eta + k*k)*cos2 - (2*eta*cos) + 1) /
+                ((eta*eta + k*k)*cos2 + (2*eta*cos) + 1);
+
+        return (Rs + Rp) / 2;
     }
 
     Vector3D MicrofacetBSDF::f(const Vector3D wo, const Vector3D wi) {
         // TODO Project 3-2: Part 2
         // Implement microfacet model here.
+        Vector3D n = Vector3D(0,0,1);
+        Vector3D bisector = (wo + wi);
+        bisector.normalize();
 
-        return Vector3D();
+        if (dot(n, wi) > 0 && dot(n, wo) > 0) {
+            return F(wi) * G(wo, wi) * D(bisector) / (4 * dot(n, wo) * dot(n, wi));
+        }
+
+        return Vector3D(0,0,0);
+
     }
 
     Vector3D MicrofacetBSDF::sample_f(const Vector3D wo, Vector3D* wi, double* pdf) {
@@ -70,7 +90,45 @@ namespace CGL {
         // Note: You should fill in the sampled direction *wi and the corresponding *pdf,
         //       and return the sampled BRDF value.
 
+        //hemisphere sampling
         *wi = cosineHemisphereSampler.get_sample(pdf);
+        return MicrofacetBSDF::f(wo, *wi);
+
+        //importance sampling
+        Vector2D r = sampler.get_sample();
+        float theta = atan(sqrt(- pow(alpha, 2) * log(1 - r.x)));
+        float phi = 2.0*PI*r.y;
+
+        //construct h from spherical coordinates w unit radius r
+        float h_x = sin(theta) * cos(phi);
+        float h_y = sin(theta) * sin(phi);
+        float h_z = cos(theta);
+        Vector3D h = Vector3D(h_x, h_y, h_z);
+
+
+        //*wi = 2.0*(dot(wo, h) / (dot(h, h)))*h - wo;
+        *wi = 2.0*(dot(wo, h) )*h - wo;
+        wi->normalize();
+        Vector3D n = Vector3D(0,0,1);
+
+        if (dot(n, *wi) == 0) {
+            *pdf = 0;
+            return Vector3D(0,0,0);
+        }
+
+        //calculate pdf_theta, pdf_psi
+        float e_value = exp(-pow(tan(theta), 2) / pow(alpha, 2));
+        float pdf_theta = 2*sin(theta) * e_value / (pow(alpha, 2) * pow(cos(theta), 3));
+
+
+        float pdf_psi = 1.0 / (2.0*PI);
+
+        float pdf_omega_h = pdf_theta * pdf_psi / sin(theta);
+
+        float pdf_omega_wi = pdf_omega_h / (4.0*dot(*wi, h));
+
+        *pdf = pdf_omega_wi;
+
         return MicrofacetBSDF::f(wo, *wi);
     }
 
