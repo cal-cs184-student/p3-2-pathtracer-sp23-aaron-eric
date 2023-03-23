@@ -24,6 +24,26 @@
         
         * NOTE: For this project, you will choose TWO out of the four given parts to complete. One of those parts must be Part 1 or Part 2. In other words, you can choose any combination of two parts except the pair (Part 3, Part 4).
 
+        <h3 align="middle">Overview</h3>
+
+        <p>
+            In this project, we worked off of the staff-provided binary of Project 3-1 to support specialized materials
+            in our ray tracing object renderer, allowing for realistic lighting of mirror and glass materials as well as
+            microfacet surfaces. These correspond to Part 1 and Part 2 of the Project 3-2 spec. **INSERT PART 1 OVERVIEW HERE**.
+            In Part 2, we computed the BRDF of rough surfaces by treating them as microfacet mirrors and implemented importance
+            sampling by computing a sampled normal vector h according to the Beckmann NDF. Our BRDF takes in three main terms,
+            a Fresnel term F, a shadowing-masking term G, and a distribution function D of the surface normals of each microfacet.
+            The normal distribution function (NDF) we adopted was similar to a Gaussian distribution, known as the Beckmann
+            distribution, and is a close estimate to the noisy, but desired distribution mentioned in lecture. Our shadowing-masking
+            term G was provided for us, and our Fresnel term was approximated based on the fixed &eta; and &kappa; indices of
+            the microfacet material at specified wavelengths. This solves for our BRDF, but to implement importance sampling, we need to
+            sample spherical coordinates &theta; and &phi; with their provided individual PDFs, which are non-trivially but
+            necessarily derived from our Beckmann NDF from previously, to construct a new normal vector h. This is necessary
+            in order to sample for rays following this distribution, as opposed to the uniform sampling over an entire hemisphere.
+            We finally use this h and our input ray w_i to solve for our specular reflected ray w_o. After that, we then combine
+            the individual pdfs of &theta; and &psi; to also output the correct PDF of our outgoing ray w_i, and finally return
+            the BRDF.
+        </p>
 
         <h3 align="middle">Part 1. Mirror and Glass Materials</h3>
 

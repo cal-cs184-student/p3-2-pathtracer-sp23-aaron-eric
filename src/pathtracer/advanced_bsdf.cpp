@@ -92,7 +92,7 @@ namespace CGL {
 
         //hemisphere sampling
         *wi = cosineHemisphereSampler.get_sample(pdf);
-        return MicrofacetBSDF::f(wo, *wi);
+        //return MicrofacetBSDF::f(wo, *wi);
 
         //importance sampling
         Vector2D r = sampler.get_sample();
