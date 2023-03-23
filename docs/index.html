@@ -30,6 +30,15 @@
             In this project, we worked off of the staff-provided binary of Project 3-1 to support specialized materials
             in our ray tracing object renderer, allowing for realistic lighting of mirror and glass materials as well as
             microfacet surfaces. These correspond to Part 1 and Part 2 of the Project 3-2 spec. **INSERT PART 1 OVERVIEW HERE**.
+
+            In Part 1, we implemented refraction and reflection to enable for glass and reflective surfaces to render. The first step was
+            enabling reflective surfaces, which just involved fully reflecting incoming rays about the surface normal. Next, refractive
+            surfaces needed to be implemented, which involved determining the angle of refraction based on Snell's law. Once the refracted
+            ray was calculated, then it could be sampled just like the reflected rays. After both reflection and refraction were implemented,
+            the GlassBSDF cold be made, which employs both methods. Shlick's approximation allowed for probabilistic sampling of either reflection
+            or refraction, depending on the angles and indices of refraction. By implementing this, the glass sphere could reflect some glare
+            from the light source, while refracting most of the rays.
+
             In Part 2, we computed the BRDF of rough surfaces by treating them as microfacet mirrors and implemented importance
             sampling by computing a sampled normal vector h according to the Beckmann NDF. Our BRDF takes in three main terms,
             a Fresnel term F, a shadowing-masking term G, and a distribution function D of the surface normals of each microfacet.
@@ -200,6 +209,10 @@
             gold refractive indices were vastly different (&eta;= {0.21646 0.42833 1.3284}, &kappa;={3.2390 2.4599 1.8661}).
         </p>
         <br>
+        <p><b>Collaborating</b></p>
+        <p>We collaborated by delegating the separate parts, one of us did Part 1 and the other did Part 2. Then we compared our
+        outcomes and worked together for the writeup. For this sort of project, collaborating went very well, as we could take on
+        different parts independently and then integrate them together later on.</p>
         
         
         
